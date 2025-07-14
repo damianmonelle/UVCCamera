@@ -1,0 +1,33 @@
+# This file contains machine-specific paths for the Android SDK and NDK.
+# Copy this file to local.properties and update the paths for your system.
+
+# Android SDK path (required)
+# Windows example:
+sdk.dir=C:\\Android\\Sdk
+# macOS example:
+# sdk.dir=/Users/username/Library/Android/sdk
+# Linux example:
+# sdk.dir=/home/username/Android/Sdk
+
+# Android NDK path (required for native code compilation)
+# Windows example:
+ndk.dir=C:\\android-ndk-r27c
+# macOS example:
+# ndk.dir=/Users/username/Library/Android/sdk/ndk/27.2.11579242
+# Linux example:
+# ndk.dir=/home/username/Android/Sdk/ndk/27.2.11579242
+
+# Optional: Custom NDK version (if not using ndk.dir)
+# ndkVersion=27.2.11579242
+
+# Optional: Custom build tools version
+# buildToolsVersion=34.0.0
+
+# Optional: Custom compile SDK version
+# compileSdkVersion=34
+
+# Optional: Custom target SDK version (should be 27 for this project)
+# targetSdkVersion=27
+
+# Optional: Custom minimum SDK version
+# minSdkVersion=18 

@@ -43,8 +43,10 @@ import com.serenegiant.usb.UVCCamera;
 import com.serenegiant.widget.SimpleUVCCameraTextureView;
 
 import java.nio.ByteBuffer;
+import android.util.Log;
 
 public final class MainActivity extends BaseActivity implements CameraDialog.CameraDialogParent {
+	private static final String TAG = "MainActivity";
 
 	private final Object mSync = new Object();
     // for accessing USB and USB camera
@@ -134,16 +136,29 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 
 		@Override
 		public void onConnect(final UsbDevice device, final UsbControlBlock ctrlBlock, final boolean createNew) {
+			Log.d(TAG, "=== CAMERA CONNECTION START ===");
+			Log.d(TAG, "Device: " + device.getDeviceName() + " VID:" + device.getVendorId() + " PID:" + device.getProductId());
 			releaseCamera();
 			queueEvent(new Runnable() {
 				@Override
 				public void run() {
+					try {
+						Log.d(TAG, "Creating UVCCamera instance...");
 					final UVCCamera camera = new UVCCamera();
+						
+						Log.d(TAG, "Opening camera...");
 					camera.open(ctrlBlock);
+						Log.d(TAG, "Camera opened successfully");
+						
+						Log.d(TAG, "Getting supported sizes...");
+						String supportedSizes = camera.getSupportedSize();
+						Log.d(TAG, "Supported sizes: " + supportedSizes);
+						
 					camera.setStatusCallback(new IStatusCallback() {
 						@Override
 						public void onStatus(final int statusClass, final int event, final int selector,
 											 final int statusAttribute, final ByteBuffer data) {
+								Log.d(TAG, "Status callback: class=" + statusClass + " event=" + event + " selector=" + selector);
 							runOnUiThread(new Runnable() {
 								@Override
 								public void run() {
@@ -164,9 +179,11 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 							});
 						}
 					});
+						
 					camera.setButtonCallback(new IButtonCallback() {
 						@Override
 						public void onButton(final int button, final int state) {
+								Log.d(TAG, "Button callback: button=" + button + " state=" + state);
 							runOnUiThread(new Runnable() {
 								@Override
 								public void run() {
@@ -183,31 +200,56 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 							});
 						}
 					});
-//					camera.setPreviewTexture(camera.getSurfaceTexture());
+						
+						Log.d(TAG, "Releasing previous preview surface...");
 					if (mPreviewSurface != null) {
 						mPreviewSurface.release();
 						mPreviewSurface = null;
 					}
+						
+						Log.d(TAG, "Setting preview size...");
 					try {
+							Log.d(TAG, "Trying MJPEG format...");
 						camera.setPreviewSize(UVCCamera.DEFAULT_PREVIEW_WIDTH, UVCCamera.DEFAULT_PREVIEW_HEIGHT, UVCCamera.FRAME_FORMAT_MJPEG);
+							Log.d(TAG, "MJPEG format set successfully");
 					} catch (final IllegalArgumentException e) {
-						// fallback to YUV mode
+							Log.w(TAG, "MJPEG format failed, trying YUV mode...", e);
 						try {
 							camera.setPreviewSize(UVCCamera.DEFAULT_PREVIEW_WIDTH, UVCCamera.DEFAULT_PREVIEW_HEIGHT, UVCCamera.DEFAULT_PREVIEW_MODE);
+								Log.d(TAG, "YUV mode set successfully");
 						} catch (final IllegalArgumentException e1) {
+								Log.e(TAG, "Both MJPEG and YUV modes failed", e1);
 							camera.destroy();
 							return;
 						}
 					}
+						
+						Log.d(TAG, "Getting SurfaceTexture from camera view...");
 					final SurfaceTexture st = mUVCCameraView.getSurfaceTexture();
 					if (st != null) {
+							Log.d(TAG, "SurfaceTexture obtained successfully");
+							Log.d(TAG, "Creating Surface from SurfaceTexture...");
 						mPreviewSurface = new Surface(st);
+							Log.d(TAG, "Surface created successfully: " + mPreviewSurface);
+							
+							Log.d(TAG, "Setting preview display...");
 						camera.setPreviewDisplay(mPreviewSurface);
-//						camera.setFrameCallback(mIFrameCallback, UVCCamera.PIXEL_FORMAT_RGB565/*UVCCamera.PIXEL_FORMAT_NV21*/);
+							Log.d(TAG, "Preview display set successfully");
+							
+							Log.d(TAG, "Starting preview...");
 						camera.startPreview();
-					}
+							Log.d(TAG, "Preview started successfully");
+							
 					synchronized (mSync) {
 						mUVCCamera = camera;
+							}
+							Log.d(TAG, "=== CAMERA CONNECTION SUCCESS ===");
+						} else {
+							Log.e(TAG, "SurfaceTexture is null! Cannot start preview");
+							camera.destroy();
+						}
+					} catch (Exception e) {
+						Log.e(TAG, "Error during camera setup", e);
 					}
 				}
 			}, 0);

@@ -415,33 +415,60 @@ public final class USBMonitor {
 	 * @return true if fail to request permission
 	 */
 	public synchronized boolean requestPermission(final UsbDevice device) {
-//		if (DEBUG) Log.v(TAG, "requestPermission:device=" + device);
+		if (destroyed) throw new IllegalStateException("already destroyed");
 		boolean result = false;
 		if (isRegistered()) {
 			if (device != null) {
 				if (mUsbManager.hasPermission(device)) {
+					Log.d(TAG, "Already has permission for device: " + device);
 					// call onConnect if app already has permission
 					processConnect(device);
 				} else {
-					try {
-						// パーミッションがなければ要求する
-						mUsbManager.requestPermission(device, mPermissionIntent);
-					} catch (final Exception e) {
-						// Android5.1.xのGALAXY系でandroid.permission.sec.MDM_APP_MGMTという意味不明の例外生成するみたい
-						Log.w(TAG, e);
-						processCancel(device);
-						result = true;
-					}
+					// Check if custom permission system is active (MainActivity handles permissions)
+					// Skip USBMonitor's permission request to avoid conflicts
+					Log.d(TAG, "Skipping USBMonitor permission request - using custom permission system");
+					Log.d(TAG, "Device: " + device + " - permission will be handled by MainActivity");
+					
+					// Don't call mUsbManager.requestPermission here
+					// Let the custom permission system in MainActivity handle it
+					// Just return false to indicate permission not granted yet
+					result = false;
 				}
 			} else {
+				Log.e(TAG, "requestPermission: device is null");
 				processCancel(device);
 				result = true;
 			}
 		} else {
+			Log.e(TAG, "requestPermission: not registered");
 			processCancel(device);
 			result = true;
 		}
 		return result;
+	}
+
+	/**
+	 * Process device connection after custom permission is granted
+	 * This method is called by MainActivity after its custom permission system grants permission
+	 * @param device The USB device that was granted permission
+	 */
+	public synchronized void processDeviceWithPermission(final UsbDevice device) {
+		if (destroyed) {
+			Log.w(TAG, "processDeviceWithPermission: USBMonitor is destroyed");
+			return;
+		}
+		if (device == null) {
+			Log.w(TAG, "processDeviceWithPermission: device is null");
+			return;
+		}
+		
+		Log.d(TAG, "Processing device with custom permission: " + device);
+		
+		// Update permission status
+		updatePermission(device, true);
+		
+		// Process the connection
+		processConnect(device);
 	}
 
 	/**
@@ -660,12 +687,33 @@ public final class USBMonitor {
 		if (useNewAPI && BuildCheck.isAndroid5()) {
 			sb.append("#");
 			if (TextUtils.isEmpty(serial)) {
-				sb.append(device.getSerialNumber());	sb.append("#");	// API >= 21
+				try {
+					sb.append(device.getSerialNumber());	sb.append("#");	// API >= 21
+				} catch (SecurityException e) {
+					// Handle SecurityException when app doesn't have permission to access serial number
+					if (DEBUG) Log.w(TAG, "SecurityException getting serial number: " + e.getMessage());
+					sb.append("unknown");	sb.append("#");
+				}
 			}
-			sb.append(device.getManufacturerName());	sb.append("#");	// API >= 21
-			sb.append(device.getConfigurationCount());	sb.append("#");	// API >= 21
+			try {
+				sb.append(device.getManufacturerName());	sb.append("#");	// API >= 21
+			} catch (SecurityException e) {
+				if (DEBUG) Log.w(TAG, "SecurityException getting manufacturer name: " + e.getMessage());
+				sb.append("unknown");	sb.append("#");
+			}
+			try {
+				sb.append(device.getConfigurationCount());	sb.append("#");	// API >= 21
+			} catch (SecurityException e) {
+				if (DEBUG) Log.w(TAG, "SecurityException getting configuration count: " + e.getMessage());
+				sb.append("0");	sb.append("#");
+			}
 			if (BuildCheck.isMarshmallow()) {
-				sb.append(device.getVersion());			sb.append("#");	// API >= 23
+				try {
+					sb.append(device.getVersion());			sb.append("#");	// API >= 23
+				} catch (SecurityException e) {
+					if (DEBUG) Log.w(TAG, "SecurityException getting version: " + e.getMessage());
+					sb.append("unknown");	sb.append("#");
+				}
 			}
 		}
 //		if (DEBUG) Log.v(TAG, "getDeviceKeyName:" + sb.toString());
@@ -888,12 +936,32 @@ public final class USBMonitor {
 
 		if (device != null) {
 			if (BuildCheck.isLollipop()) {
-				info.manufacturer = device.getManufacturerName();
-				info.product = device.getProductName();
-				info.serial = device.getSerialNumber();
+				try {
+					info.manufacturer = device.getManufacturerName();
+				} catch (SecurityException e) {
+					if (DEBUG) Log.w(TAG, "SecurityException getting manufacturer name: " + e.getMessage());
+					info.manufacturer = null;
+				}
+				try {
+					info.product = device.getProductName();
+				} catch (SecurityException e) {
+					if (DEBUG) Log.w(TAG, "SecurityException getting product name: " + e.getMessage());
+					info.product = null;
+				}
+				try {
+					info.serial = device.getSerialNumber();
+				} catch (SecurityException e) {
+					if (DEBUG) Log.w(TAG, "SecurityException getting serial number: " + e.getMessage());
+					info.serial = null;
+				}
 			}
 			if (BuildCheck.isMarshmallow()) {
-				info.usb_version = device.getVersion();
+				try {
+					info.usb_version = device.getVersion();
+				} catch (SecurityException e) {
+					if (DEBUG) Log.w(TAG, "SecurityException getting version: " + e.getMessage());
+					info.usb_version = null;
+				}
 			}
 			if ((manager != null) && manager.hasPermission(device)) {
 				final UsbDeviceConnection connection = manager.openDevice(device);

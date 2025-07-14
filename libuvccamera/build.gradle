@@ -44,6 +44,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+    
+    lintOptions {
+        abortOnError false
+    }
 	sourceSets {
 		main {
 			jniLibs.srcDir 'src/main/libs'

@@ -61,8 +61,10 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import com.serenegiant.usb.Size;
 
 abstract class AbstractUVCCameraHandler extends Handler {
 	private static final boolean DEBUG = true;	// TODO set false on release
@@ -289,6 +291,82 @@ abstract class AbstractUVCCameraHandler extends Handler {
 			}
 		}
 		throw new IllegalStateException();
+	}
+
+	/**
+	 * Get the UVCCamera instance for direct access
+	 * @return UVCCamera instance or null if not available
+	 */
+	public UVCCamera getUVCCamera() {
+		checkReleased();
+		final CameraThread thread = mWeakThread.get();
+		return thread != null ? thread.mUVCCamera : null;
+	}
+
+	/**
+	 * Get supported resolutions
+	 * @return List of supported sizes or null if not available
+	 */
+	public List<Size> getSupportedResolutions() {
+		checkReleased();
+		final CameraThread thread = mWeakThread.get();
+		final UVCCamera camera = thread != null ? thread.mUVCCamera : null;
+		return camera != null ? camera.getSupportedSizeList() : null;
+	}
+
+	/**
+	 * Get current preview size
+	 * @return Current preview size or null if not available
+	 */
+	public Size getCurrentPreviewSize() {
+		checkReleased();
+		final CameraThread thread = mWeakThread.get();
+		final UVCCamera camera = thread != null ? thread.mUVCCamera : null;
+		return camera != null ? camera.getPreviewSize() : null;
+	}
+
+	/**
+	 * Change resolution
+	 * @param width new width
+	 * @param height new height
+	 * @param format frame format (UVCCamera.FRAME_FORMAT_YUYV or UVCCamera.FRAME_FORMAT_MJPEG)
+	 * @return true if successful, false otherwise
+	 */
+	public boolean changeResolution(final int width, final int height, final int format) {
+		checkReleased();
+		final CameraThread thread = mWeakThread.get();
+		final UVCCamera camera = thread != null ? thread.mUVCCamera : null;
+		if (camera != null) {
+			try {
+				Log.d(TAG, "changeResolution: Starting resolution change to " + width + "x" + height + " format=" + format);
+				
+				// Stop preview before changing resolution
+				if (thread.isPreviewing()) {
+					Log.d(TAG, "changeResolution: Stopping preview before resolution change");
+					camera.stopPreview();
+				}
+				
+				// Set new resolution
+				Log.d(TAG, "changeResolution: Setting preview size to " + width + "x" + height + " format=" + format);
+				camera.setPreviewSize(width, height, format);
+				
+				// Update thread dimensions
+				synchronized (thread.mSync) {
+					thread.mWidth = width;
+					thread.mHeight = height;
+					thread.mPreviewMode = format;
+				}
+				
+				Log.d(TAG, "changeResolution: Resolution change successful");
+				return true;
+			} catch (Exception e) {
+				Log.e(TAG, "changeResolution: Failed to change resolution", e);
+				return false;
+			}
+		} else {
+			Log.e(TAG, "changeResolution: Camera is null");
+			return false;
+		}
 	}
 
 	@Override

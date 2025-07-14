@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UVC Camera Viewer</string>
+    <string name="camera_connect">Connect Camera</string>
+    <string name="camera_disconnect">Disconnect Camera</string>
+    <string name="no_camera_found">No UVC camera found</string>
+    <string name="camera_connected">Camera connected</string>
+    <string name="camera_disconnected">Camera disconnected</string>
+    <string name="permission_required">USB permission required</string>
+    <string name="camera_error">Camera error occurred</string>
+</resources> 

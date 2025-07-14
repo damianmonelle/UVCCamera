@@ -1,167 +1,220 @@
-UVCCamera
-=========
+# USB Camera Test 8 - Working Version for OSSURET S8 Android 10
 
-library and sample to access to UVC web camera on non-rooted Android device
+A fully functional Android UVC (USB Video Class) camera application specifically tested and working on OSSURET S8 Android 10 headunit devices.
 
-Copyright (c) 2014-2017 saki t_saki@serenegiant.com
+## 🎯 **Project Status: WORKING**
 
- Licensed under the Apache License, Version 2.0 (the "License");
- you may not use this file except in compliance with the License.
- You may obtain a copy of the License at
+✅ **Fully functional** - Camera preview, USB permission handling, and video display working  
+✅ **Tested on OSSURET S8** - Android 10 headunit device  
+✅ **Permission system resolved** - Target SDK 27 fix implemented  
+⚠️ **Audio routing** - Not implemented (manual audio routing required)
 
-     http://www.apache.org/licenses/LICENSE-2.0
+## 📋 **Features**
 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
+- **UVC Camera Support**: Connect to any USB camera supporting UVC standard
+- **Android 10+ Compatible**: Specifically tested on OSSURET S8 Android 10
+- **Robust Permission Handling**: Custom permission system with fallback mechanisms
+- **Real-time Preview**: Live video feed from connected cameras
+- **Auto-connect**: Automatic USB device detection and connection
+- **Manual Permission Check**: UI button for manual permission verification
+- **Diagnostic Logging**: Comprehensive logging for troubleshooting
 
-All files in the folder are under this Apache License, Version 2.0.
-Files in the jni/libjpeg, jni/libusb and jin/libuvc folders may have a different license,
-see the respective files.
+## 🔧 **Technical Specifications**
 
-How to compile library  
-=========
-The Gradle build system will build the entire project, including the NDK parts. If you want to build with Gradle build system,
+- **Target SDK**: 27 (Android 8.1) - Critical for USB permission compatibility
+- **Minimum SDK**: 18 (Android 4.3)
+- **Architecture**: arm64-v8a, armeabi-v7a
+- **Permissions**: Camera, USB Host, Foreground Service, System Alert Window
+- **Dependencies**: libuvccamera, usbCameraCommon, Android Support Libraries
 
-1. make directory on your favorite place (this directory is parent directory of `UVCCamera` project).
-2. change directory into the directory.
-3. clone this repository with `git  clone https://github.com/saki4510t/UVCCamera.git`
-4. change directory into `UVCCamera` directory with `cd UVCCamera`
-5. build library with all sample projects using `gradle build`
+## 📱 **Device Compatibility**
 
-It will takes several minutes to build. Now you can see apks in each `{sample project}/build/outputs/apks` directory.  
-Or if you want to install and try all sample projects on your device, run `gradle installDebug`.  
+### ✅ **Tested and Working**
+- **OSSURET S8** - Android 10 headunit
+- **MACROSILICON USB3.0 Capture** - VID:13407, PID:8496
+- **Other UVC-compatible cameras** (theoretically supported)
 
-Note: Just make sure that `local.properties` contains the paths for `sdk.dir` and `ndk.dir`. Or you can set them as enviroment variables of you shell. On some system, you may need add `JAVA_HOME` envairoment valiable that points to JDK directory.  
+### 🔍 **Requirements**
+- Android device with USB host support
+- UVC-compatible USB camera
+- USB OTG cable (if device doesn't have direct USB port)
 
-If you want to use Android Studio(unfortunately NDK supporting on Android Studio is very poor though),
-1. make directory on your favorite place (this directory is parent directory of `UVCCamera` project).
-2. change directory into the directory.
-3. clone this repository with `git  clone https://github.com/saki4510t/UVCCamera.git`
-4. start Android Studio and open the cloned repository using `Open an existing Android Studio project`
-5. Android Studio raise some errors but just ignore now. Android Studio generate `local.properties` file. Please open `local.properties` and add `ndk.dir` key to the end of the file. The contents of the file looks like this.
+## 🚀 **Quick Start**
+
+### **Option 1: Install Pre-built APK**
+```bash
+# Install the working APK directly
+adb install usbCameraTest8-debug.apk
 ```
-sdk.dir={path to Android SDK on your storage}
-ndk.dir={path to Android SDK on your storage}
+
+### **Option 2: Build from Source**
+```bash
+# Clone and build
+git clone <repository-url>
+cd usbCameraTest8_Working
+./gradlew assembleDebug
+adb install usbCameraTest8/build/outputs/apk/debug/usbCameraTest8-debug.apk
 ```
-Please replace actual path to SDK and NDK on your storage.  
-Of course you can make `local.properties` by manually instead of using automatically generated ones by Android Studio.
-6. Synchronize project
-7. execute `Make project` from `Build` menu.
 
-If you want to use build-in VCS on Android Studio, use `Check out project from Version Control` from `https://github.com/saki4510t/UVCCamera.git`. After cloning, Android Studio ask you open the project but don't open now. Instead open the project using `Open an existing Android Studio project`. Other procedures are same as above.
+## 🔧 **Build Requirements**
 
-If you still need to use Eclipse or if you don't want to use Gradle with some reason, you can build suing `ndk-build` command.
+- **Android Studio** (latest version recommended)
+- **Android SDK** with API level 27+
+- **NDK** (r25 or r27 recommended)
+- **Java Development Kit** (JDK 17 recommended)
 
-1. make directory on your favorite place.
-2. change directory into the directory.
-3. clone this repository with `git  clone https://github.com/saki4510t/UVCCamera.git`
-4. change directory into `{UVCCamera}/libuvccamera/build/src/main/jni` directory.
-5. run `ndk-build`
-6. resulted shared libraries are available under `{UVCCamera}/libuvccamera/build/src/main/libs` directory and copy them into your project with directories by manually.
-7. copy files under `{UVCCamera}/libuvccamera/build/src/main/java` into your project source directory by manually.
+### **local.properties Setup**
+Create `local.properties` in the root directory:
+```properties
+sdk.dir=C:\\Android\\Sdk
+ndk.dir=C:\\android-ndk-r27c
+```
 
-How to use
-=========
-Please see sample project and/or our web site(but sorry web site is Japanese only).
-These sample projects are IntelliJ projects, as is the library.
-This library works on at least Android 3.1 or later(API >= 12), but Android 4.0(API >= 14)
-or later is better. USB host function must be required.
-If you want to try on Android 3.1, you will need some modification(need to remove
-setPreviewTexture method in UVCCamera.java etc.), but we have not confirm whether the sample
-project run on Android 3.1 yet.
-Some sample projects need API>=18 though.
+## 📖 **Usage Instructions**
 
-### 2014/07/25
-Add some modification to the library and new sample project named "USBCameraTest2".
-This new sample project demonstrate how to capture movie using frame data from
-UVC camera with MediaCodec and MediaMuxer.
-New sample requires at least Android 4.3(API>=18).
-This limitation does not come from the library itself but from the limitation of
-MediaMuxer and MediaCodec#createInputSurface.
+1. **Connect your UVC camera** to the Android device via USB
+2. **Launch the usbCameraTest8 app**
+3. **Grant USB permissions** when prompted
+4. **View the camera feed** in the app interface
+5. **Use "Check Permission" button** if needed for manual permission verification
 
-### 2014/09/01
-Add new sample project named `USBCameraTest3`
-This new sample project demonstrate how to capture audio and movie simultaneously
-using frame data from UVC camera and internal mic with MediaCodec and MediaMuxer.
-This new sample includes still image capturing as png file.(you can easily change to
-save as jpeg) This sample also requires at least Android 4.3(API>=18).
-This limitation does not come from the library itself but from the limitation of
-MediaMuxer and MediaCodec#createInputSurface.
+## 🔍 **Key Technical Fixes Implemented**
 
-### 2014/11/16
-Add new sample project named `USBCameraTest4`
-This new sample project mainly demonstrate how to use offscreen rendering
-and record movie without any display.
-The communication with camera execute as Service and continue working
-even if you stop app. If you stop camera communication, click "stop service" button.
+### **1. Target SDK Version Fix**
+- **Problem**: USB permission dialogs fail with `targetSdkVersion > 27`
+- **Solution**: Set `targetSdkVersion = 27` in `build.gradle`
+- **Result**: Permission dialogs now appear and work correctly
 
-### 2014/12/17
-Add bulk transfer mode and update sample projects.
+### **2. Custom Permission System**
+- **Problem**: Library's internal permission system conflicts with custom handling
+- **Solution**: Implemented custom permission request with fallback timer
+- **Result**: Robust permission handling with automatic recovery
 
-### 2015/01/12
-Add wiki page, [HowTo](https://github.com/saki4510t/UVCCamera/wiki/howto "HowTo")
+### **3. Permission Fallback Mechanism**
+- **Problem**: BroadcastReceiver sometimes misses permission responses
+- **Solution**: Added periodic permission status checking with Handler timer
+- **Result**: App recovers even if permission response is missed
 
-### 2015/01/22
-Add method to adjust preview resolution and frame data mode.
+### **4. Comprehensive Device Filtering**
+- **Problem**: Specific UVC devices not detected
+- **Solution**: Added MACROSILICON device to `device_filter.xml`
+- **Result**: All supported UVC devices are properly detected
 
-### 2015/02/12
-Add IFrameCallback interface to get frame data as ByteArray
-and new sample project `USBCameraTest5` to demonstrate how to use the callback method.
+## 📁 **Project Structure**
 
-### 2015/02/18
-Add `libUVCCamera` as a library project(source code is almost same as previous release except Android.mk).
-All files and directories under `library` directory is deprecated.
+```
+usbCameraTest8_Working/
+├── usbCameraTest8/          # Main application module
+│   ├── src/main/
+│   │   ├── java/           # Java source code
+│   │   ├── res/            # Resources (layouts, values, etc.)
+│   │   └── AndroidManifest.xml
+│   └── build.gradle
+├── libuvccamera/           # Core UVC camera library
+│   ├── src/main/
+│   │   ├── java/          # Java bindings
+│   │   ├── jni/           # Native C/C++ code
+│   │   └── res/           # Library resources
+│   └── build.gradle
+├── usbCameraCommon/        # Shared utilities
+│   ├── src/main/
+│   │   ├── java/          # Common classes
+│   │   └── res/           # Shared resources
+│   └── build.gradle
+├── build.gradle           # Root build configuration
+├── settings.gradle        # Project settings
+├── gradle.properties      # Gradle properties
+├── usbCameraTest8-debug.apk  # Pre-built working APK
+└── README.md              # This file
+```
 
-### 2015/05/25
-libraryProject branch merged to master.
+## 🔧 **Configuration Files**
 
-### 2015/05/30
-Fixed the issue that DeviceFilter class could not work well when providing venderID, productID etc.
+### **Device Filter (usbCameraTest8/src/main/res/xml/device_filter.xml)**
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- MACROSILICON USB3.0 Capture -->
+    <usb-device vendor-id="13407" product-id="8496" />
+    <!-- Generic UVC devices -->
+    <usb-device class="239" />
+    <usb-device class="255" />
+</resources>
+```
 
-### 2015/06/03
-Add new sample project named `USBCameraTest6`
-This new sample project mainly demonstrate how to show video images on two TextureView simultaneously, side by side.
+### **Permissions (usbCameraTest8/src/main/AndroidManifest.xml)**
+- `android.permission.CAMERA`
+- `android.permission.RECORD_AUDIO`
+- `android.permission.WRITE_EXTERNAL_STORAGE`
+- `android.permission.READ_EXTERNAL_STORAGE`
+- `android.permission.INTERNET`
+- `android.permission.ACCESS_NETWORK_STATE`
+- `android.permission.FOREGROUND_SERVICE`
+- `android.permission.SYSTEM_ALERT_WINDOW`
+- `android.hardware.usb.host` (feature)
 
-### 2015/06/10
-Fixed the issue of pixel format is wrong when NV21 mode on calling IFrameCallback#onFrame(U and V plane was swapped) and added YUV420SP mode.
+## 🐛 **Troubleshooting**
 
-### 2015/06/11
-Improve the issue of `USBCameraTest4` that fails to connect/disconnect.
+### **Common Issues**
 
-### 2015/07/19
-Add new methods to get/set camera features like brightness, contrast etc.  
-Add new method to get supported resolution from camera as json format.  
+1. **Camera not detected:**
+   - Ensure camera supports UVC standard
+   - Check USB connection and cable
+   - Verify device has USB host support
 
-### 2015/08/17
-Add new sample project `USBCameraTest7` to demonstrate how to use two camera at the same time.  
+2. **Permission denied:**
+   - Grant USB permissions when prompted
+   - Use "Check Permission" button if needed
+   - Check device USB settings
 
-### 2015/09/20
-Fixed the issue that building native libraries fail on Windows.
+3. **No video display:**
+   - Ensure camera is properly connected
+   - Check camera compatibility
+   - Verify USB permissions are granted
 
-### 2015/10/30
-Merge pull request(add status and button callback). Thanks Alexey Pelykh.
+4. **Build errors:**
+   - Update Android Studio and SDK tools
+   - Ensure NDK is properly configured
+   - Check Java version compatibility
 
-### 2015/12/16
-Add feature so that user can request fps range from Java code when negotiating with camera. Actual resulted fps depends on each UVC camera. Currently there is no way to get resulted fps(will add on future).
+### **Debug Logs**
+Enable debug logging by setting `DEBUG = true` in MainActivity.java:
+```java
+private static final boolean DEBUG = true;
+```
 
-### 2016/03/01
-update minoru001 branch, experimentaly support streo camera.
+## 📝 **Known Limitations**
 
-### 2016/06/18
-replace libjpeg-turbo 1.4.0 with 1.5.0
+- **Audio routing not implemented** - Manual audio routing required
+- **Target SDK 27** - Required for USB permission compatibility
+- **Android 10+ specific** - Tested primarily on OSSURET S8
 
-### 2016/11/17
-apply bandwidth factor setting of usbcameratest7 on master branch
+## 🤝 **Contributing**
 
-### 2016/11/21
-Now this repository supports Android N(7.x) and dynamic permission model of Android N and later.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### 2017/01/16
-Add new sample app `usbCameraTest8` to show how to set/get uvc control like brightness 
+## 📄 **License**
 
-### 2017/04/17
-Add new sample app on [OpenCVwithUVC](https://github.com/saki4510t/OpenCVwithUVC.git) repository.
-This shows the way to pass video images from UVC into `cv::Mat` (after optional applying video effect by OpenGL|ES) and execute image processing by `OpenCV`.
+This project is based on the libuvccamera library and is licensed under the Apache License, Version 2.0.
+
+## 🙏 **Acknowledgments**
+
+- Original libuvccamera library developers (saki4510t)
+- UVC standard contributors
+- Android USB host API developers
+- OSSURET S8 testing and validation
+
+## 📞 **Support**
+
+For issues and questions:
+- Create an issue on GitHub
+- Check the troubleshooting section
+- Review the original libuvccamera documentation
+
+---
+
+**Note**: This is a working version specifically tested on OSSURET S8 Android 10. For other devices, compatibility may vary.

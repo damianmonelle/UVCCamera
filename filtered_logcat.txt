@@ -1,0 +1,313 @@
+
+full_logcat_dump.txt:15:07-13 19:32:02.369  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:17:07-13 19:32:03.175  4128  6296 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:40:07-13 19:32:06.603  4128  4150 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:47:07-13 19:32:08.191  4128  4150 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:62:07-13 19:32:10.834  4128  4150 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:70:07-13 19:32:13.217  4128  7153 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:89:07-13 19:32:15.061  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:113:07-13 19:32:18.241  4128  7153 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:122:07-13 19:32:19.283  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:141:07-13 19:32:23.257  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:154:07-13 19:32:23.513  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:175:07-13 19:32:27.746  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:177:07-13 19:32:28.283  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:197:07-13 19:32:31.976  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:199:07-13 19:32:33.310  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:231:07-13 19:32:36.208  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:273:07-13 19:32:38.330 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:274:07-13 19:32:38.334 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:275:07-13 19:32:38.335  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:276:07-13 19:32:38.336 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:279:07-13 19:32:38.470  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:280:07-13 19:32:38.470  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:281:07-13 19:32:38.470  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:320:07-13 19:32:40.434  4128  7153 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:367:07-13 19:32:42.875  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:374:07-13 19:32:43.351 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:381:07-13 19:32:43.356 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:382:07-13 19:32:43.357  4128  7153 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:384:07-13 19:32:43.358 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:387:07-13 19:32:43.491  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:388:07-13 19:32:43.491  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:389:07-13 19:32:43.491  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:427:07-13 19:32:44.647  4128  6296 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:444:07-13 19:32:45.891  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:493:07-13 19:32:48.379 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:494:07-13 19:32:48.384 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:495:07-13 19:32:48.385  4128  6296 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:496:07-13 19:32:48.386 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:499:07-13 19:32:48.521  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:500:07-13 19:32:48.521  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:501:07-13 19:32:48.521  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:523:07-13 19:32:48.866  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:526:07-13 19:32:48.905  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:613:07-13 19:32:53.038  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:632:07-13 19:32:53.408 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:633:07-13 19:32:53.411 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:634:07-13 19:32:53.412  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:635:07-13 19:32:53.412 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:638:07-13 19:32:53.533  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:639:07-13 19:32:53.533  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:640:07-13 19:32:53.533  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:662:07-13 19:32:54.927  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:699:07-13 19:32:55.381  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:700:07-13 19:32:55.381  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:701:07-13 19:32:55.381  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:737:07-13 19:32:56.764  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_9
+full_logcat_dump.txt:739:07-13 19:32:56.764  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_8
+full_logcat_dump.txt:741:07-13 19:32:56.764  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_9
+full_logcat_dump.txt:743:07-13 19:32:56.765  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_7
+full_logcat_dump.txt:745:07-13 19:32:56.765  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_8
+full_logcat_dump.txt:747:07-13 19:32:56.765  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_6
+full_logcat_dump.txt:749:07-13 19:32:56.766  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_7
+full_logcat_dump.txt:751:07-13 19:32:56.766  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_5
+full_logcat_dump.txt:753:07-13 19:32:56.766  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_6
+full_logcat_dump.txt:755:07-13 19:32:56.766  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_4
+full_logcat_dump.txt:757:07-13 19:32:56.767  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_5
+full_logcat_dump.txt:759:07-13 19:32:56.767  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_3
+full_logcat_dump.txt:761:07-13 19:32:56.767  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_4
+full_logcat_dump.txt:763:07-13 19:32:56.768  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_2
+full_logcat_dump.txt:765:07-13 19:32:56.768  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_3
+full_logcat_dump.txt:767:07-13 19:32:56.768  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_1
+full_logcat_dump.txt:769:07-13 19:32:56.768  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_2
+full_logcat_dump.txt:771:07-13 19:32:56.769  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all
+full_logcat_dump.txt:773:07-13 19:32:56.769  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all_1
+full_logcat_dump.txt:775:07-13 19:32:56.769  5567  6042 I searchSkipFileFilter: ---USBService---是否是过滤扫描目录：true   /storage/emulated/0/txz/log/text_all
+full_logcat_dump.txt:798:07-13 19:32:57.227  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:817:07-13 19:32:57.937  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:825:07-13 19:32:58.429 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:826:07-13 19:32:58.432 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:829:07-13 19:32:58.433  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:830:07-13 19:32:58.433 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:833:07-13 19:32:58.554  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:834:07-13 19:32:58.554  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:835:07-13 19:32:58.554  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:877:07-13 19:33:00.045  7287  7287 D Tools   : CarSettings main (Tools.java:1018) startMSService: UsbVideoOutput - CaptureService - isRunning: false
+full_logcat_dump.txt:879:07-13 19:33:00.050  7287  7287 D CarSettingService: CarSettings main (CarSettingService.java:802) startup360CameraService: startup360CameraService - running: false
+full_logcat_dump.txt:880:07-13 19:33:00.050  7287  7287 D FileOperationUtils: CarSettings main (FileOperationUtils.java:701) has360CameraModule: has360CameraModule - data: 0
+full_logcat_dump.txt:890:07-13 19:33:00.423  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:891:07-13 19:33:00.423  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:892:07-13 19:33:00.423  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:895:07-13 19:33:00.986  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:933:07-13 19:33:01.454  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:978:07-13 19:33:02.485  7329  7329 D Launcher: startActivity - pkg: com.shenyaocn.android.usbcamerapro - naviPackageName: com.google.android.apps.maps - dvrPackageName: ar.tvplayer.tv - obdPackageName: com.zhiliaoapp.musically - tpmsPackageName: tv.pluto.android
+full_logcat_dump.txt:981:07-13 19:33:02.487  7329  7329 I QFApi   : isFreeformTask - task pkg: com.serenegiant.usbcameratest8 - windowingMode: 1 - isFreeformTask: false
+full_logcat_dump.txt:982:07-13 19:33:02.487  4128  7167 I ActivityTaskManager: execute - ComponentName: ComponentInfo{com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity} - mService: com.android.server.wm.ActivityTaskManagerService@89cdf89 - callingPackage: com.android.launcher.gradient.black - caller: android.app.IApplicationThread$Stub$Proxy@9867b7d
+full_logcat_dump.txt:983:07-13 19:33:02.488  4128  7167 I ActivityTaskManager: isSplitPackageName - ComponentName: - packageName: com.shenyaocn.android.usbcamerapro - appNotSupportSplit: false
+full_logcat_dump.txt:984:07-13 19:33:02.489  4128  7167 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity bnds=[1024,375][1280,670] (has extras)} from uid 1000, pid 7329
+full_logcat_dump.txt:985:07-13 19:33:02.489  4128  7167 D PowerController.BgClean: judgeAppLaunchAllowed : com.shenyaocn.android.usbcamerapro(uid:10272), callingPackage = com.android.launcher.gradient.black(uid:1000), reason = start-activity
+full_logcat_dump.txt:986:07-13 19:33:02.489  4128  7167 D PowerController.BgClean: judgeAppLaunchAllowed : intent action:Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity bnds=[1024,375][1280,670] (has extras) }
+full_logcat_dump.txt:987:07-13 19:33:02.489  4128  7167 D PowerController.BgClean: in apppowerconfig autolaunch black list: com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:998:07-13 19:33:02.496  4128  7167 I ActivityTaskManager: ->startActivity for ActivityRecord{1d24340 u0 com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity t113} result:START_SUCCESS
+full_logcat_dump.txt:1001:07-13 19:33:02.499  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_VIEW_CLICKED; EventTime: 3565993; PackageName: com.android.launcher.gradient.black; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.widget.TextView; Text: [USB Camera Pro]; ContentDescription: USB Camera Pro; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1009:07-13 19:33:02.506  4128  4156 I ActivityManager: startProcessLocked - launcherPackage: com.android.launcher.gradient.black - app.pid: 0 - app.processName: com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:1011:07-13 19:33:02.509  5707 24273 V ACCESSIBILITY: CLICK - text: USB Camera Pro; viewId: null
+full_logcat_dump.txt:1012:07-13 19:33:02.509  5707 24273 V JOAOMGCD: AutoInput-CLICK - text: USB Camera Pro; viewId: null
+full_logcat_dump.txt:1015:07-13 19:33:02.517  4128  4169 I ActivityManager: Start proc 24276:com.shenyaocn.android.usbcamerapro/u0a272 for activity {com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity}
+full_logcat_dump.txt:1029:07-13 19:33:02.535  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_CONTENT_CHANGED; EventTime: 3566028; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: [CONTENT_CHANGE_TYPE_SUBTREE]; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1032:07-13 19:33:02.540  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_CONTENT_CHANGED; EventTime: 3566034; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: [CONTENT_CHANGE_TYPE_SUBTREE]; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1033:07-13 19:33:02.540  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_STATE_CHANGED; EventTime: 3566034; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1038:07-13 19:33:02.552  4128  5529 V WindowManager: Set focused app to: AppWindowToken{e0e2bbe token=Token{a845279 ActivityRecord{1d24340 u0 com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity t113}}} moveFocusNow=true displayId=0
+full_logcat_dump.txt:1043:07-13 19:33:02.562  3542  3542 D android.hardware.power@4.0-impl: Enter getSceneIdByName: sceneName:com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:1052:07-13 19:33:02.571 24276 24276 I id.usbcamerapr: The ClassLoaderContext is a special shared library.
+full_logcat_dump.txt:1054:07-13 19:33:02.571  4128  4513 D SSense.StateTracker: Notify new state for com.shenyaocn.android.usbcamerapro is ACTIVE
+full_logcat_dump.txt:1072:07-13 19:33:02.621 24276 24276 I PhoneWindow: requestFeature - pkg: com.shenyaocn.android.usbcamerapro - naviStr: com.google.android.apps.maps
+full_logcat_dump.txt:1073:07-13 19:33:02.621 24276 24276 I PhoneWindow: requestFeature - pkg: com.shenyaocn.android.usbcamerapro - naviStr: com.google.android.apps.maps
+full_logcat_dump.txt:1074:07-13 19:33:02.621 24276 24276 I PhoneWindow: generateLayout - pkg: com.shenyaocn.android.usbcamerapro - naviStr: com.google.android.apps.maps
+full_logcat_dump.txt:1100:07-13 19:33:02.685  4128  4994 D PowerController.BgClean: judgeAppLaunchAllowed : com.shenyaocn.android.usbcamerapro(uid:10272), callingPackage = com.shenyaocn.android.usbcamerapro(uid:10272), reason = start-service
+full_logcat_dump.txt:1101:07-13 19:33:02.686  4128  4994 D PowerController.BgClean: judgeAppLaunchAllowed : intent action:Intent { cmp=com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.USBCameraService }
+full_logcat_dump.txt:1102:07-13 19:33:02.686  4128  4994 D PowerController.BgClean: Start Proc : com.shenyaocn.android.usbcamerapro, callingPackage = com.shenyaocn.android.usbcamerapro, reason = start-service: already started!! (ProcState:PROCESS_STATE_TOP mState:MOVE_TO_FOREGROUND)
+full_logcat_dump.txt:1104:07-13 19:33:02.691  4128  4994 D PowerController.BgClean: judgeAppLaunchAllowed : com.shenyaocn.android.usbcamerapro(uid:10272), callingPackage = com.shenyaocn.android.usbcamerapro(uid:10272), reason = bind-service
+full_logcat_dump.txt:1105:07-13 19:33:02.691  4128  4994 D PowerController.BgClean: judgeAppLaunchAllowed : intent action:Intent { cmp=com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.USBCameraService }
+full_logcat_dump.txt:1106:07-13 19:33:02.691  4128  4994 D PowerController.BgClean: Start Proc : com.shenyaocn.android.usbcamerapro, callingPackage = com.shenyaocn.android.usbcamerapro, reason = bind-service: already started!! (ProcState:PROCESS_STATE_TOP mState:MOVE_TO_FOREGROUND)
+full_logcat_dump.txt:1107:07-13 19:33:02.693 24276 24276 I ActivityThread: performResumeActivity - pkgName: com.shenyaocn.android.usbcamerapro - className: com.shenyaocn.android.usbcamera.MainActivity
+full_logcat_dump.txt:1109:07-13 19:33:02.695 24276 24276 I xxb     : thread[main, 2] (WindowManagerImpl.java:98): topname = com.shenyaocn.android.usbcamerapro---Window = com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:1132:07-13 19:33:02.769  4128  4994 D WindowManager: Input focus has changed to Window{f8da039 u0 com.shenyaocn.android.usbcamerapro/com.shenyaocn.android.usbcamera.MainActivity}
+full_logcat_dump.txt:1137:07-13 19:33:02.774  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_CONTENT_CHANGED; EventTime: 3566267; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: [CONTENT_CHANGE_TYPE_SUBTREE]; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1138:07-13 19:33:02.776  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_STATE_CHANGED; EventTime: 3566267; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: com.shenyaocn.android.usbcamera.MainActivity; Text: [USB Camera Pro]; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: true; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1149:07-13 19:33:02.829  5083  5083 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1311 onStartInput(EditorInfo{EditorInfo{packageName=com.shenyaocn.android.usbcamerapro, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=-1, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+full_logcat_dump.txt:1152:07-13 19:33:02.850  5736  5736 D com.txznet.smartwakeup.module.accessibility.TxzAccessibilityService@onAccessibilityEvent: current packageName com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:1164:07-13 19:33:02.866  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_NOTIFICATION_STATE_CHANGED; EventTime: 3566359; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.app.Notification; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: false; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: Notification(channel=usb_camera_default_id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE) ]; recordCount: 0
+full_logcat_dump.txt:1165:07-13 19:33:02.866  5736  5736 D TxzAccessibilityService: unprocessed event: EventType: TYPE_NOTIFICATION_STATE_CHANGED; EventTime: 3566359; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.app.Notification; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: false; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: Notification(channel=usb_camera_default_id pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE) ]; recordCount: 0
+full_logcat_dump.txt:1167:07-13 19:33:02.873  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_CONTENT_CHANGED; EventTime: 3566367; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: [CONTENT_CHANGE_TYPE_SUBTREE, CONTENT_CHANGE_TYPE_TEXT]; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1168:07-13 19:33:02.876  5736  5736 D TxzAccessibilityService: 3: EventType: TYPE_WINDOW_CONTENT_CHANGED; EventTime: 3566367; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: [CONTENT_CHANGE_TYPE_SUBTREE, CONTENT_CHANGE_TYPE_TEXT]; WindowChangeTypes: [] [ ClassName: android.widget.FrameLayout; Text: []; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1171:07-13 19:33:02.911  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1172:07-13 19:33:02.911  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1173:07-13 19:33:02.911  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1176:07-13 19:33:02.923  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1177:07-13 19:33:02.923  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1178:07-13 19:33:02.923  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1181:07-13 19:33:02.932  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1182:07-13 19:33:02.932  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1183:07-13 19:33:02.932  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1186:07-13 19:33:02.939  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1187:07-13 19:33:02.939  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1188:07-13 19:33:02.940  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1191:07-13 19:33:02.946  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1192:07-13 19:33:02.946  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1193:07-13 19:33:02.946  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1196:07-13 19:33:02.953  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1197:07-13 19:33:02.953  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1198:07-13 19:33:02.953  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1213:07-13 19:33:03.486 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1214:07-13 19:33:03.490 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1215:07-13 19:33:03.490  4128  5808 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1217:07-13 19:33:03.491 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1221:07-13 19:33:03.607  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1222:07-13 19:33:03.607  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1223:07-13 19:33:03.607  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1226:07-13 19:33:03.761 24276 24276 V Toast   : Toast SHOW: android.widget.Toast@c27c6b8 view = android.widget.LinearLayout{5cbdc91 V.E...... ......I. 0,0-0,0} caller: com.shenyaocn.android.usbcamera.ed.a:15 
+full_logcat_dump.txt:1228:07-13 19:33:03.768  4128  5808 I ActivityTaskManager: execute - ComponentName: ComponentInfo{com.android.systemui/com.android.systemui.usb.UsbPermissionActivity} - mService: com.android.server.wm.ActivityTaskManagerService@89cdf89 - callingPackage: android - caller: android.app.ActivityThread$ApplicationThread@1dbb44e
+full_logcat_dump.txt:1232:07-13 19:33:03.770  4128  5808 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.android.systemui/.usb.UsbPermissionActivity (has extras)} from uid 1000, pid 4128
+full_logcat_dump.txt:1234:07-13 19:33:03.770  4128  5808 D PowerController.BgClean: judgeAppLaunchAllowed : intent action:Intent { flg=0x10000000 cmp=com.android.systemui/.usb.UsbPermissionActivity (has extras) }
+full_logcat_dump.txt:1235:07-13 19:33:03.775  4128  5808 I ActivityTaskManager: ->startActivity for ActivityRecord{20df1bf u0 com.android.systemui/.usb.UsbPermissionActivity t114} result:START_SUCCESS
+full_logcat_dump.txt:1241:07-13 19:33:03.778 24276 24276 I xxb     : thread[main, 2] (WindowManagerImpl.java:98): topname = com.shenyaocn.android.usbcamerapro---Window = com.shenyaocn.android.usbcamerapro
+full_logcat_dump.txt:1242:07-13 19:33:03.785  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_NOTIFICATION_STATE_CHANGED; EventTime: 3567279; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.widget.Toast$TN; Text: [USB device attached
+full_logcat_dump.txt:1243:07-13 19:33:03.785  5736  5736 D TxzAccessibilityService: USB3.0 Capture]; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: false; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1244:07-13 19:33:03.785  5736  5736 D TxzAccessibilityService: unprocessed event: EventType: TYPE_NOTIFICATION_STATE_CHANGED; EventTime: 3567279; PackageName: com.shenyaocn.android.usbcamerapro; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.widget.Toast$TN; Text: [USB device attached
+full_logcat_dump.txt:1245:07-13 19:33:03.785  5736  5736 D TxzAccessibilityService: USB3.0 Capture]; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: false; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1250:07-13 19:33:03.788  4128  5808 V WindowManager: Set focused app to: AppWindowToken{7df23d5 token=Token{852508c ActivityRecord{20df1bf u0 com.android.systemui/.usb.UsbPermissionActivity t114}}} moveFocusNow=true displayId=0
+full_logcat_dump.txt:1272:07-13 19:33:03.829  4713  4713 I ActivityThread: performResumeActivity - pkgName: com.android.systemui - className: com.android.systemui.usb.UsbPermissionActivity
+full_logcat_dump.txt:1275:07-13 19:33:03.856  4128  4150 D WindowManager: Input focus has changed to Window{250f4bc u0 com.android.systemui/com.android.systemui.usb.UsbPermissionActivity}
+full_logcat_dump.txt:1284:07-13 19:33:03.861  5736  5736 D TxzAccessibilityService: onAccessibilityEvent: event=EventType: TYPE_WINDOW_STATE_CHANGED; EventTime: 3567355; PackageName: com.android.systemui; MovementGranularity: 0; Action: 0; ContentChangeTypes: []; WindowChangeTypes: [] [ ClassName: android.app.Dialog; Text: [USB Camera Pro, Allow USB Camera Pro to access USB3.0 Capture?, Always open USB Camera Pro when USB3.0 Capture is connected, CANCEL, OK]; ContentDescription: null; ItemCount: -1; CurrentItemIndex: -1; Enabled: true; Password: false; Checked: false; FullScreen: false; Scrollable: false; BeforeText: null; FromIndex: -1; ToIndex: -1; ScrollX: -1; ScrollY: -1; MaxScrollX: -1; MaxScrollY: -1; AddedCount: -1; RemovedCount: -1; ParcelableData: null ]; recordCount: 0
+full_logcat_dump.txt:1315:07-13 19:33:03.994  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1349:07-13 19:33:05.613  4128  5808 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1362:07-13 19:33:05.772  4128  5808 W NotificationService: Toast already killed. pkg=com.shenyaocn.android.usbcamerapro callback=android.app.ITransientNotification$Stub$Proxy@2f11a16
+full_logcat_dump.txt:1397:07-13 19:33:07.007  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1436:07-13 19:33:08.507 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1437:07-13 19:33:08.510 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1438:07-13 19:33:08.511  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1439:07-13 19:33:08.511 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1442:07-13 19:33:08.644  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1443:07-13 19:33:08.644  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1444:07-13 19:33:08.644  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1473:07-13 19:33:09.840  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1475:07-13 19:33:10.004  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1499:07-13 19:33:13.019  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1513:07-13 19:33:13.510 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1514:07-13 19:33:13.513 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1515:07-13 19:33:13.514  4128  4150 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1516:07-13 19:33:13.515 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1519:07-13 19:33:13.648  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1520:07-13 19:33:13.648  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1521:07-13 19:33:13.648  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1549:07-13 19:33:14.059  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1583:07-13 19:33:15.304  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1585:07-13 19:33:15.304  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1586:07-13 19:33:15.304  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1599:07-13 19:33:16.029  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1630:07-13 19:33:18.286  4128  5551 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1633:07-13 19:33:18.533 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1634:07-13 19:33:18.536 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1635:07-13 19:33:18.537  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1636:07-13 19:33:18.538 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1639:07-13 19:33:18.667  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1640:07-13 19:33:18.667  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1641:07-13 19:33:18.667  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1645:07-13 19:33:19.044  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1708:07-13 19:33:19.218  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1709:07-13 19:33:19.218  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1710:07-13 19:33:19.218  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1814:07-13 19:33:21.418  4128  7153 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1831:07-13 19:33:22.465 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1832:07-13 19:33:22.468 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1833:07-13 19:33:22.469  4128  5551 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1834:07-13 19:33:22.469 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1837:07-13 19:33:22.596  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1838:07-13 19:33:22.597  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1839:07-13 19:33:22.597  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:1857:07-13 19:33:23.981  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1883:07-13 19:33:25.647  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:1902:07-13 19:33:26.996  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:1907:07-13 19:33:27.486 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:1908:07-13 19:33:27.489 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:1909:07-13 19:33:27.490  4128  7167 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:1910:07-13 19:33:27.490 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:1913:07-13 19:33:27.615  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1914:07-13 19:33:27.616  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:1915:07-13 19:33:27.616  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2065:07-13 19:33:30.933  4128  4150 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2079:07-13 19:33:31.077  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2102:07-13 19:33:33.577 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2103:07-13 19:33:33.580 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2104:07-13 19:33:33.580  4128  7153 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2105:07-13 19:33:33.581 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2108:07-13 19:33:33.711  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2109:07-13 19:33:33.711  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2110:07-13 19:33:33.711  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2121:07-13 19:33:34.086  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2149:07-13 19:33:35.164  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2212:07-13 19:33:38.598 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2213:07-13 19:33:38.601 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2214:07-13 19:33:38.602  4128  5808 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2215:07-13 19:33:38.603 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2219:07-13 19:33:38.736  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2220:07-13 19:33:38.736  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2221:07-13 19:33:38.736  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2244:07-13 19:33:39.399  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2251:07-13 19:33:40.153  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2292:07-13 19:33:43.167  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2306:07-13 19:33:43.660 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2307:07-13 19:33:43.663 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2308:07-13 19:33:43.664  4128  5529 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2309:07-13 19:33:43.664 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2320:07-13 19:33:43.675  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2322:07-13 19:33:43.802  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2323:07-13 19:33:43.802  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2324:07-13 19:33:43.802  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2430:07-13 19:33:46.181  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2462:07-13 19:33:47.904  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2470:07-13 19:33:48.680 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2471:07-13 19:33:48.683 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2472:07-13 19:33:48.684  4128  5529 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2473:07-13 19:33:48.684 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2476:07-13 19:33:48.816  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2477:07-13 19:33:48.816  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2478:07-13 19:33:48.816  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2494:07-13 19:33:49.195  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2536:07-13 19:33:52.075  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2538:07-13 19:33:52.161  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2558:07-13 19:33:53.655 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2559:07-13 19:33:53.659 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2560:07-13 19:33:53.659  4128  5529 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2561:07-13 19:33:53.660 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2572:07-13 19:33:53.793  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2573:07-13 19:33:53.793  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2574:07-13 19:33:53.793  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2639:07-13 19:33:56.297  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2686:07-13 19:33:58.677 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:2687:07-13 19:33:58.681 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:2688:07-13 19:33:58.682  4128  5529 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:2689:07-13 19:33:58.682 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:2702:07-13 19:33:58.821  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2703:07-13 19:33:58.821  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2704:07-13 19:33:58.821  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:2774:07-13 19:34:00.197  7287  7287 D Tools   : CarSettings main (Tools.java:1018) startMSService: UsbVideoOutput - CaptureService - isRunning: false
+full_logcat_dump.txt:2775:07-13 19:34:00.207  7287  7287 D CarSettingService: CarSettings main (CarSettingService.java:802) startup360CameraService: startup360CameraService - running: false
+full_logcat_dump.txt:2776:07-13 19:34:00.208  7287  7287 D FileOperationUtils: CarSettings main (FileOperationUtils.java:701) has360CameraModule: has360CameraModule - data: 0
+full_logcat_dump.txt:2791:07-13 19:34:00.560  4128  7167 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:2989:07-13 19:34:02.998  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:2993:07-13 19:34:02.999  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2994:07-13 19:34:02.999  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:2995:07-13 19:34:02.999  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:3042:07-13 19:34:03.005  4622  4649 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.txznet.trace:getDeviceId:isPreinstalled=false:isPrivApp=false
+full_logcat_dump.txt:3067:07-13 19:34:03.017  4622  4649 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.txznet.trace:getSubscriberId:isPreinstalled=false:isPrivApp=false
+full_logcat_dump.txt:3103:07-13 19:34:03.746 20581 20581 D DiagnosticService: Total USB devices found: 1
+full_logcat_dump.txt:3104:07-13 19:34:03.749 20581 20581 I DiagnosticService: UVC Device found: /dev/bus/usb/001/007 VID:13407 PID:8496
+full_logcat_dump.txt:3105:07-13 19:34:03.750  4128  7167 I UsbUserSettingsManager: Camera permission required for USB video class devices
+full_logcat_dump.txt:3106:07-13 19:34:03.751 20581 20581 I DiagnosticService: Has permission: false
+full_logcat_dump.txt:3110:07-13 19:34:03.878  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:3111:07-13 19:34:03.878  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:3112:07-13 19:34:03.878  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+full_logcat_dump.txt:3122:07-13 19:34:04.007  4622  4649 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.txznet.weather:getDeviceId:isPreinstalled=true:isPrivApp=false
+full_logcat_dump.txt:3126:07-13 19:34:04.028  4622  4649 W TelephonyPermissions: reportAccessDeniedToReadIdentifiers:com.txznet.weather:getSubscriberId:isPreinstalled=true:isPrivApp=false
+full_logcat_dump.txt:3149:07-13 19:34:04.267  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:3171:07-13 19:34:04.786  4128  5529 W ActivityManager: u0 Starting a service in packagecom.zjinnova.zlink requires a permissions review
+full_logcat_dump.txt:3184:07-13 19:34:05.277  4128  5529 I LocationManagerService: hasGnssPermissions, PID: 5736, UID: 10127, PackageName: com.txznet.txz, allowedResolutionLevel: 2
+full_logcat_dump.txt:3191:07-13 19:34:05.283  4128  5529 I LocationManagerService: hasGnssPermissions, PID: 5736, UID: 10127, PackageName: com.txznet.txz, allowedResolutionLevel: 2
+full_logcat_dump.txt:3256:07-13 19:34:07.280  4713  4713 D StatusBarSignalPolicy: updateWifiIconWithState state : WifiIconState(resId=2131231896, visible=true)
+full_logcat_dump.txt:3259:07-13 19:34:08.035  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.notification.row.FooterView{7179b45 V.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:3260:07-13 19:34:08.035  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.EmptyShadeView{2ba529a G.E...... ......I. 0,0-0,0}}
+full_logcat_dump.txt:3261:07-13 19:34:08.035  4713  4713 E StackScroller: Attempting to re-position  view {com.android.systemui.statusbar.NotificationShelf{ceac7f7 VFE...C.. ......I. 0,0-0,0}}
+

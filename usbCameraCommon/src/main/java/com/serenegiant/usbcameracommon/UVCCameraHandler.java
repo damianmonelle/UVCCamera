@@ -24,11 +24,15 @@
 package com.serenegiant.usbcameracommon;
 
 import android.app.Activity;
+import android.util.Log;
+import android.view.Surface;
 
 import com.serenegiant.usb.UVCCamera;
 import com.serenegiant.widget.CameraViewInterface;
 
 public class UVCCameraHandler extends AbstractUVCCameraHandler {
+
+	private static final String TAG = "UVCCameraHandler";
 
 	/**
 	 * create UVCCameraHandler, use MediaVideoEncoder, try MJPEG, default bandwidth
@@ -120,7 +124,16 @@ public class UVCCameraHandler extends AbstractUVCCameraHandler {
 
 	@Override
 	public void startPreview(final Object surface) {
+		Log.d(TAG, "UVCCameraHandler.startPreview: called");
 		super.startPreview(surface);
+		Log.d(TAG, "UVCCameraHandler.startPreview: super.startPreview finished");
+	}
+
+	@Override
+	public void stopPreview() {
+		Log.d(TAG, "UVCCameraHandler.stopPreview: called");
+		super.stopPreview();
+		Log.d(TAG, "UVCCameraHandler.stopPreview: super.stopPreview finished");
 	}
 
 	@Override

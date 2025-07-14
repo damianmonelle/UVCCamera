@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- UVC Camera devices - Class 14 is USB Video Class -->
+    <usb-device class="14"/>
+    
+    <!-- MACROSILICON USB3.0 Capture device -->
+    <usb-device product-id="8496" vendor-id="13407"/>
+    
+    <!-- Common UVC Camera Vendor IDs -->
+    <usb-device product-id="12290" vendor-id="7025"/>
+    <usb-device product-id="0x408" vendor-id="0x5e1"/>
+    <usb-device product-id="0x2861" vendor-id="0xeb1a"/>
+    
+    <!-- EasyCap and similar devices -->
+    <usb-device product-id="0x7" vendor-id="0x1c88"/>
+    <usb-device product-id="0x3c" vendor-id="0x1c88"/>
+    <usb-device product-id="0x3d" vendor-id="0x1c88"/>
+    <usb-device product-id="0x3e" vendor-id="0x1c88"/>
+    <usb-device product-id="0x3f" vendor-id="0x1c88"/>
+    <usb-device product-id="0x1001" vendor-id="0x1c88"/>
+    
+    <!-- Generic UVC devices (fallback) -->
+    <usb-device class="255" subclass="255" protocol="255"/>
+    <usb-device />
+</resources> 

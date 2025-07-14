@@ -172,7 +172,19 @@ public class CameraDialog extends DialogFragment {
 			case DialogInterface.BUTTON_POSITIVE:
 				final Object item = mSpinner.getSelectedItem();
 				if (item instanceof UsbDevice) {
-					mUSBMonitor.requestPermission((UsbDevice)item);
+					try {
+						mUSBMonitor.requestPermission((UsbDevice)item);
+					} catch (SecurityException e) {
+						android.util.Log.e(TAG, "USB permission denied", e);
+						android.widget.Toast.makeText(getActivity(), "USB permission denied. Please allow access in system settings.", android.widget.Toast.LENGTH_LONG).show();
+						((CameraDialogParent)getActivity()).onDialogResult(true);
+						return;
+					} catch (Exception e) {
+						android.util.Log.e(TAG, "Error requesting USB permission", e);
+						android.widget.Toast.makeText(getActivity(), "Error requesting USB permission: " + e.getMessage(), android.widget.Toast.LENGTH_LONG).show();
+						((CameraDialogParent)getActivity()).onDialogResult(true);
+						return;
+					}
 					((CameraDialogParent)getActivity()).onDialogResult(false);
 				}
 				break;
