@@ -72,6 +72,8 @@ import android.view.WindowManager;
 import com.serenegiant.usb.DeviceFilter;
 import java.util.HashMap;
 import android.os.Handler;
+import android.media.AudioDeviceInfo;
+import java.nio.ByteBuffer;
 
 public final class MainActivity extends BaseActivity implements CameraDialog.CameraDialogParent {
 	private static final boolean DEBUG = true;	// TODO set false on release
@@ -163,6 +165,10 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 	// Timer for permission fallback check
 	private Handler mPermissionCheckHandler;
 	private Runnable mPermissionCheckRunnable;
+	
+	// UAC Audio support
+	private UACAudioManager mUACAudioManager;
+	private boolean mAudioEnabled = false;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -194,6 +200,9 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 		
 		// Start diagnostic service
 		startService(new Intent(this, DiagnosticService.class));
+		
+		// Initialize UAC Audio Manager
+		mUACAudioManager = new UACAudioManager(this);
 		
 		// Initialize UI components
 		mCameraButton = findViewById(R.id.camera_button);
@@ -612,6 +621,12 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 		// Stop diagnostic service
 		stopService(new Intent(this, DiagnosticService.class));
 		
+		// Release UAC Audio Manager
+		if (mUACAudioManager != null) {
+			mUACAudioManager.release();
+			mUACAudioManager = null;
+		}
+		
 		super.onDestroy();
 	}
 
@@ -739,6 +754,32 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 		}
 	}
 
+	// UAC Audio callback implementation
+	private final UACAudioManager.AudioCaptureCallback mAudioCallback = new UACAudioManager.AudioCaptureCallback() {
+		@Override
+		public void onAudioData(ByteBuffer audioData, int sampleRate, int channelCount) {
+			if (DEBUG) Log.d(TAG, "Audio data received: " + audioData.remaining() + " bytes, " + sampleRate + "Hz, " + channelCount + " channels");
+			// Here you can process the audio data or send it to an encoder
+		}
+
+		@Override
+		public void onAudioError(String error) {
+			Log.e(TAG, "Audio error: " + error);
+			runOnUiThread(() -> Toast.makeText(MainActivity.this, "Audio Error: " + error, Toast.LENGTH_SHORT).show());
+		}
+
+		@Override
+		public void onAudioDeviceConnected(AudioDeviceInfo device) {
+			Log.i(TAG, "USB Audio device connected: " + device.getProductName());
+			runOnUiThread(() -> Toast.makeText(MainActivity.this, "USB Audio: " + device.getProductName(), Toast.LENGTH_SHORT).show());
+		}
+
+		@Override
+		public void onAudioDeviceDisconnected(AudioDeviceInfo device) {
+			Log.i(TAG, "USB Audio device disconnected: " + device.getProductName());
+		}
+	};
+
 	private final OnDeviceConnectListener mOnDeviceConnectListener = new OnDeviceConnectListener() {
 		@Override
 		public void onAttach(final UsbDevice device) {
@@ -783,6 +824,9 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 				
 				Log.i(TAG, "Starting preview");
 			startPreview();
+			
+			// Start UAC audio capture if available
+			startUACAudioCapture();
 				Log.i(TAG, "Preview started successfully");
 				
 				Log.i(TAG, "Updating UI items");
@@ -805,6 +849,9 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 			
 			// Write to diagnostic file
 			writeDiagnosticLog("USB_DEVICE_DISCONNECTED", device);
+			
+			// Stop UAC audio recording
+			stopUACAudioCapture();
 			
 			try {
 				// Notify the service about the USB disconnection
@@ -1223,6 +1270,58 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
 			}
 		} catch (Exception e) {
 			Log.e(TAG, "Error handling USB device attachment", e);
+		}
+	}
+	
+	/**
+	 * Start UAC audio capture from USB audio devices
+	 */
+	private void startUACAudioCapture() {
+		if (mUACAudioManager == null) {
+			Log.w(TAG, "UAC Audio Manager not initialized");
+			return;
+		}
+		
+		// Scan for USB audio devices
+		mUACAudioManager.scanForUsbAudioDevices();
+		
+		List<AudioDeviceInfo> usbDevices = mUACAudioManager.getUsbAudioDevices();
+		if (usbDevices.isEmpty()) {
+			Log.i(TAG, "No USB audio devices found");
+			return;
+		}
+		
+		Log.i(TAG, "Found " + usbDevices.size() + " USB audio devices:");
+		for (AudioDeviceInfo device : usbDevices) {
+			Log.i(TAG, "  - " + device.getProductName() + " (ID: " + device.getId() + ")");
+		}
+		
+		// Auto-select the first USB audio device
+		if (mUACAudioManager.autoSelectUsbAudioDevice()) {
+			Log.i(TAG, "Auto-selected USB audio device: " + mUACAudioManager.getSelectedDevice().getProductName());
+			
+			// Start audio recording
+			if (mUACAudioManager.startAudioRecording(mAudioCallback)) {
+				mAudioEnabled = true;
+				Log.i(TAG, "UAC audio recording started successfully");
+				runOnUiThread(() -> Toast.makeText(MainActivity.this, "USB Audio: Recording started", Toast.LENGTH_SHORT).show());
+			} else {
+				Log.e(TAG, "Failed to start UAC audio recording");
+				runOnUiThread(() -> Toast.makeText(MainActivity.this, "USB Audio: Failed to start recording", Toast.LENGTH_SHORT).show());
+			}
+		} else {
+			Log.w(TAG, "No USB audio device available for recording");
+		}
+	}
+	
+	/**
+	 * Stop UAC audio capture
+	 */
+	private void stopUACAudioCapture() {
+		if (mUACAudioManager != null && mAudioEnabled) {
+			mUACAudioManager.stopAudioRecording();
+			mAudioEnabled = false;
+			Log.i(TAG, "UAC audio recording stopped");
 		}
 	}
 
